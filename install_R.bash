@@ -35,8 +35,7 @@ cran_repo_toplevel="https://cloud.r-project.org/bin/linux"
 
 # Get distro name, keep only the actual name, and set to all lowercase
 # I'll be honest: I have no idea how the lowercasing works
-distro="$(cat /etc/*-release | grep '^ID=' | sed 's/ID=//g; s/\"//g')"
-distro="${distro,,}"
+distro="debian"
 
 # Get architecture (mostly for Debian src check
 architecture="$(uname -m)"
